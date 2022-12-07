@@ -10,7 +10,7 @@ print("\033[1;34;40mBIENVENIDO AL SISTEMA DE CONSULTAS DE BODEGAS \033[0;0m \n")
 
 salir = False
 while(not salir):
-    print("Ingrese el número de la consulta que desee realizar: \n")
+    print("\nIngrese el número de la consulta que desee realizar: \n")
     print("  \033[1;31;40m1-\033[0;0m Obtener lineas de omnibus para una bodega y origen (departamento) dado \n")
     print("  \033[1;31;40m2-\033[0;0m Obtener excursiones disponibles para una bodega dada \n")
     nro_consulta = int(input())
@@ -69,7 +69,7 @@ while(not salir):
                         else:
                             break;
             else:
-                print("Lo sentimos, no hay lineas de omnibus disponibles para su consulta")
+                print("\nLo sentimos, no hay lineas de omnibus disponibles para su consulta")
         
         elif nro_consulta == 2:
             cur.execute("""SELECT id, nombre_fantasia
